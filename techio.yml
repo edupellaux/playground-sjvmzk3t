@@ -1,6 +1,6 @@
-title: Simple Node.js Template
+title: Playground de test
 plan:
-- title: Node.js Snippet
+- title: Test
   statement: statement.md
 projects:
   nodejs:
