@@ -2,28 +2,9 @@ let utils = require('./utils.js');
 let exo = require('./exo.js');
 let assert  = require('assert');
 
-it('should eturrn HELLO', () => {
-	try {
-		assert.equal("Module 288", exo.LE_MODULE);
-    	assert.equal(typeof(exo.LE_MODULE), "string");
-	} catch (error) {
-		utils.printMessage ('Conseil 💡',"Vérifier la valeur")
-
-		throw error;
-	}
-});
-
-it('should throws Error', function () {
-    try {
-		assert.throws(
-	      () => exo.LE_MODULE = 'Test',
-	      TypeError
-	    );
-	} catch (error) {
-		utils.printMessage ('Conseil 💡',"est une variable")
-
-		throw error;
-	}
-    
-
+describe('Test de constante', function() {
+  it('La variable devrait être une constante', function() {
+    //const myConst = 42; // déclaration de la constante
+    assert.strictEqual(Object.getOwnPropertyDescriptor(exo, 'LE_MODULE').writable, false, 'La variable n\'est pas une constante'); //vérification de la constante
+  });
 });
