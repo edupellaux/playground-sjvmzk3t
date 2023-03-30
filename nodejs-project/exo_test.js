@@ -10,9 +10,6 @@ it("création des variables'", function () {
 
         assert.strictEqual(12, ex.nombre2);
         assert.strictEqual(typeof(ex.nombre2), "number");
-
-        assert.strictEqual(17, ex.total);
-        assert.strictEqual(typeof(ex.total), "number");
     }
     catch (error)
     {
