@@ -1,10 +1,22 @@
-let utils = require('./utils.js');
-const exo = require('./exo.js');
-let assert  = require('assert');
+const utils = require('./utils.js');
+const assert = require('assert');
+const ex = require('./exo.js');
 
-describe('Test de constante', function() {
-  it('La variable devrait être une constante', function() {
-    const myConst = 42; // déclaration de la constante
-    assert.strictEqual(exo.isWritable, false, 'La variable n\'est pas une constante'); //vérification de la constante
-  });
+it("test'", function () {
+    try
+    {
+        assert.strictEqual(5, ex.nombre1);
+        assert.strictEqual(typeof(ex.nombre1), "number");
+
+        assert.strictEqual(12, ex.nombre2);
+        assert.strictEqual(typeof(ex.nombre2), "number");
+
+        assert.strictEqual(17, (ex.nombre1 + ex.nombre2));
+    }
+    catch (error)
+    {
+        utils.printMessage('Conseil 💡', "Vérifiez les noms et/ou les valeurs des variables 🤔");
+
+        throw error;
+    }
 });
