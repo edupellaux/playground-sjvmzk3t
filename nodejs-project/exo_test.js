@@ -1,11 +1,10 @@
-const assert = require('assert');
+let utils = require('./utils.js');
 const exo = require('./exo.js');
+let assert  = require('assert');
 
 describe('Test de constante', function() {
-  it('La constante devrait être une constante', function() {
-    const expectedValue = 'valeur attendue';
-    const obj = { constante: exo.LE_MODULE };
-    Object.freeze(obj); // On gèle l'objet
-    assert.throws(() => { obj.constante = 'nouvelle valeur'; }, TypeError, 'La constante n\'est pas une constante');
+  it('La variable devrait être une constante', function() {
+    const myConst = 42; // déclaration de la constante
+    assert.strictEqual(exo.isWritable, false, 'La variable n\'est pas une constante'); //vérification de la constante
   });
 });
