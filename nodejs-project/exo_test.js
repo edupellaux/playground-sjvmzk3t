@@ -15,7 +15,7 @@ it('should eturrn HELLO', () => {
 
 it('should throws Error', function () {
     try {
-		assert.doesNotThrow(
+		assert.throws(
 	      () => exo.LE_MODULE = 'Test',
 	      TypeError
 	    );
