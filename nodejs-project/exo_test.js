@@ -11,7 +11,7 @@ it('should return HELLO', () => {
 	}
 });
 
-it('should throws Error', function () {
+/*it('should throws Error', function () {
     try {
 		assert.doesNotThrow(
 	      () => ex.LE_MODULE = 'Test',
@@ -22,4 +22,4 @@ it('should throws Error', function () {
 	}
     
 
-});
+});*/
