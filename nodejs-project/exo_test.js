@@ -5,29 +5,13 @@ const ex = require('./exo.js');
 it("création des variables'", function () {
     try
     {
-        assert.strictEqual(5, ex.nombre1);
-        assert.strictEqual(typeof(ex.nombre1), "number");
-
-        assert.strictEqual(12, ex.nombre2);
-        assert.strictEqual(typeof(ex.nombre2), "number");
+        assert.strictEqual("égalité", ex.test(5, 5));
+        assert.strictEqual("petit est plus petit", ex.test(5, 6));
+        assert.strictEqual("petit est plus grand", ex.test(6, 5));
     }
     catch (error)
     {
-        utils.printMessage('Conseil 💡', "Vérifiez les noms et/ou les valeurs des variables 🤔");
-
-        throw error;
-    }
-});
-
-it("calcul du total'", function () {
-    try
-    {
-        assert.strictEqual(17, ex.total);
-        assert.strictEqual(typeof(ex.total), "number");
-    }
-    catch (error)
-    {
-        utils.printMessage('Conseil 💡', "Vérifiez les noms et/ou les valeurs des variables 🤔");
+        utils.printMessage('Conseil 💡', "Vérifiez le nom et/ou la valeur de la variable 🤔");
 
         throw error;
     }
