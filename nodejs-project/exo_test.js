@@ -5,7 +5,7 @@ let assert  = require('assert');
 it('should eturrn HELLO', () => {
 	try {
 		assert.equal("Module 288", exo.LE_MODULE);
-    	assert.equal(typeof(ex.LE_MODULE), "string");
+    	assert.equal(typeof(exo.LE_MODULE), "string");
 	} catch (error) {
 		utils.printMessage ('Conseil 💡',"Vérifier la valeur")
 
