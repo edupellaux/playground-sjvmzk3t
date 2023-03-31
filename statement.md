@@ -12,4 +12,4 @@ If you want a more complex example (external libraries, viewers...), use the [Ad
 
 # Test
 
-@[Écrivez la fonction demandée]({"stubs":["exo.js"], "command":"node_modules/mocha/bin/mocha exo_test.js --reporter list"})
+@[Test]({"stubs":["exo.js"], "command":"node_modules/mocha/bin/mocha exo_test.js --reporter list"})

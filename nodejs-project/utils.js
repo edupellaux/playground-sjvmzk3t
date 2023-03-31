@@ -1,8 +1,8 @@
-const printToChannel = (channel, message) => {
+const printMessage = (channel, message) => {
 	console.log(`\nTECHIO> message --channel ${channel} ${message}`);
 }
 
 
 module.exports = {
-  printToChannel : printToChannel
+  printMessage : printMessage
 };

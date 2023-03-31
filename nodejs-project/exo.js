@@ -1,5 +1,7 @@
-// Ecrivez ici la fonction nommée toUpper
+
 
 // {
-module.exports = toUpper;
+module.exports = {
+	LE_MODULE: LE_MODULE
+};
 // }
