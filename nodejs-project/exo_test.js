@@ -4,7 +4,7 @@ let assert  = require('assert');
 
 it('should eturrn HELLO', () => {
 	try {
-		assert.equal("Module 288", ex.LE_MODULE);
+		assert.equal("Module 288", exo.LE_MODULE);
     	assert.equal(typeof(ex.LE_MODULE), "string");
 	} catch (error) {
 		utils.printMessage ('Conseil 💡',"Vérifier la valeur")
@@ -16,7 +16,7 @@ it('should eturrn HELLO', () => {
 it('should throws Error', function () {
     try {
 		assert.doesNotThrow(
-	      () => ex.LE_MODULE = 'Test',
+	      () => exo.LE_MODULE = 'Test',
 	      TypeError
 	    );
 	} catch (error) {
