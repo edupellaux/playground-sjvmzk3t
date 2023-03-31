@@ -2,7 +2,6 @@
     "name": "test-playground-nodejs",
     "version": "1.0.0",
     "dependencies": {
-        "mocha": "*",
-        "should": ">= 0.0.1"
+        "mocha": "7.2.0"
     }
 }
