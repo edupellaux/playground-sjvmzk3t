@@ -1,3 +1,4 @@
+let printToMessage = require('./utils.js');
 let toUpper = require('./exo.js');
 let assert  = require('assert');
 

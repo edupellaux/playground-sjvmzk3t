@@ -1,5 +1,5 @@
-function printToChannel(channel, message) {
-	console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"');
+const printToChannel = (channel, message) => {
+	console.log(`\nTECHIO> message --channel ${channel} ${message}`);
 }
 
 
