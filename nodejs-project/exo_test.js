@@ -13,7 +13,7 @@ it('should eturrn HELLO', () => {
 	}
 });
 
-/*it('should throws Error', function () {
+it('should throws Error', function () {
     try {
 		assert.doesNotThrow(
 	      () => ex.LE_MODULE = 'Test',
@@ -21,7 +21,9 @@ it('should eturrn HELLO', () => {
 	    );
 	} catch (error) {
 		utils.printMessage ('Conseil 💡',"est une variable")
+
+		throw error;
 	}
     
 
-});*/
+});
