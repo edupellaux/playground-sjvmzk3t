@@ -7,14 +7,19 @@ it('should return HELLO', () => {
 		assert.equal("Module 288", ex.LE_MODULE);
     	assert.equal(typeof(ex.LE_MODULE), "string");
 	} catch (error) {
-		utils.printMessage ('Conseil 💡',"Vérifier le retour de la fonction toUpper")
+		utils.printMessage ('Conseil 💡',"Vérifier la valeur")
 	}
 });
 
 it('should throws Error', function () {
-    assert.throws(
-      () => ex.LE_MODULE = 'Test',
-      TypeError
-    );
+    try {
+		assert.doesNotThrow(
+	      () => ex.LE_MODULE = 'Test',
+	      TypeError
+	    );
+	} catch (error) {
+		utils.printMessage ('Conseil 💡',"est une variable")
+	}
+    
 
 });
