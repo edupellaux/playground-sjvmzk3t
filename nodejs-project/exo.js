@@ -1,18 +1,17 @@
-let nombre1 = 12
-let nombre2 = 15
+let nombre = 0
 
 // {
 function test (nombre1, nombre2) {
 // }
-let phrase = ""
+let retour = ""
 
-// Écrivez la condition ci-dessous
+// Écrivez le test de comparaison ci-dessous
 
 
 
 
 // {
-	return phrase
+	return retour
 }
 module.exports = {
 	test : test

@@ -3,29 +3,30 @@ const assert = require('assert');
 const ex = require('./exo.js');
 
 describe('Test de comparaison de valeurs', () => {
-	it("Test de l'égalité", () => {
+	it("Test de nombre plus petit ou égal à 5", () => {
 	    try
 	    {
-	        assert.strictEqual("égalité", ex.test(5, 5));
+	        assert.strictEqual(true, ex.test(4));
+	        assert.strictEqual(true, ex.test(5));
 	    }
 	    catch (error)
 	    {
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que les valeurs soient identiques 🤔");
-        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable phrase 🤔");
+	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que la valeur soit plus petite ou égal à 5 🤔");
+        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable retour 🤔");
 
 	        throw error;
 	    }
 	});
 
-	it("Test nombre1 est plus petit que nombre2", () => {
+	it("Test de nombre plus grand que 5", () => {
 	    try
 	    {
-	        assert.strictEqual("nombre1 est plus petit", ex.test(5, 6));
+	        assert.strictEqual("false", ex.test(6));
 	    }
 	    catch (error)
 	    {
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que la variable nombre1 soit plus petit que nombre2 🤔");
-        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable phrase 🤔");
+	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que la valeur soit plus grande que 5 🤔");
+        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable retour 🤔");
 
 	        throw error;
 	    }
