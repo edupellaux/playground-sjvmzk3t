@@ -21,7 +21,7 @@ describe('Test de comparaison de valeurs', () => {
 	it("Test de nombre plus grand que 5", () => {
 	    try
 	    {
-	        assert.strictEqual("false", ex.test(6));
+	        assert.strictEqual(false, ex.test(6));
 	    }
 	    catch (error)
 	    {
