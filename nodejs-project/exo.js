@@ -1,7 +1,8 @@
-let nombre = 0
+let variable1 = 2
+let variable2 = "2"
 
 // {
-function test (nombre) {
+function test (variable1, variable2) {
 // }
 let retour = ""
 
