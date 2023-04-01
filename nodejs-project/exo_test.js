@@ -21,12 +21,12 @@ describe('Test de comparaison de valeurs sans type', () => {
 	it("Test avec des valeurs identiques", () => {
 	    try
 	    {
-	        assert.strictEqual(true, ex.test(1, "1"));
-	        assert.strictEqual(true, ex.test(1, true));
+	        assert.strictEqual(false, ex.test(1, "1"));
+	        assert.strictEqual(false, ex.test(1, true));
 	    }
 	    catch (error)
 	    {
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que uniquement les valeurs soient identiques 🤔");
+	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que les valeurs et les types soient identiques 🤔");
         	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable retour 🤔");
 
 	        throw error;
