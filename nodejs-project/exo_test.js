@@ -3,7 +3,7 @@ const assert = require('assert');
 const ex = require('./exo.js');
 
 describe('Je teste describe allez hop', () => {
-	it("création des variables'", function () {
+	it("test des conditions'", function () {
 	    try
 	    {
 	        assert.strictEqual("égalité", ex.test(5, 5));
