@@ -2,7 +2,7 @@ const utils = require('./utils.js');
 const assert = require('assert');
 const ex = require('./exo.js');
 
-describe('Je teste describe' () => {
+describe('Je teste describe', () => {
 	it("création des variables'", function () {
 	    try
 	    {
