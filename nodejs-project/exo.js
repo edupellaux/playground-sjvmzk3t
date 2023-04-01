@@ -1,7 +1,7 @@
 let nombre = 0
 
 // {
-function test (nombre1, nombre2) {
+function test (nombre) {
 // }
 let retour = ""
 
