@@ -1,10 +1,10 @@
-let variable1 = 2
-let variable2 = "2"
+let age = 5
+let estEtudiant = ""
 
 // {
-function test (variable1, variable2) {
+function conditionLogiqueEt (age, estEtudiant) {
 // }
-let retour = ""
+let phrase = ""
 
 // Écrivez le test de comparaison ci-dessous
 
@@ -12,9 +12,9 @@ let retour = ""
 
 
 // {
-	return retour
+	return phrase
 }
 module.exports = {
-	test : test
+	conditionLogiqueEt : conditionLogiqueEt
 };
 // }
