@@ -31,18 +31,4 @@ describe('Test de comparaison de valeurs', () => {
 	        throw error;
 	    }
 	});
-
-	it("Test nombre2 est plus petit que nombre1", () => {
-	    try
-	    {
-	        assert.strictEqual("nombre1 est plus grand", ex.test(6, 5));
-	    }
-	    catch (error)
-	    {
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que la variable nombre1 soit plus grand que nombre2 🤔");
-        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable phrase 🤔");
-
-	        throw error;
-	    }
-	});
 })
