@@ -5,7 +5,7 @@ let nombre2 = 15
 function test (nombre1, nombre2) {
 // }
 // Écrivez ci-dessous la condition
-
+let phrase = ""
 
 
 

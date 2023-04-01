@@ -34,7 +34,7 @@ describe('Test de comparaison de valeurs', () => {
 	it("Test nombre2 est plus petit que nombre1", () => {
 	    try
 	    {
-	        assert.strictEqual("petit est plus grand", ex.test(6, 5));
+	        assert.strictEqual("nombre1 est plus grand", ex.test(6, 5));
 	    }
 	    catch (error)
 	    {
