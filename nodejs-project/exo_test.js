@@ -20,7 +20,7 @@ describe('Test de comparaison opérateur logique et', () => {
 
 	it("Test avec minorité", () => {
 	    try
-	    {conditionLogiqueEt
+	    {
 	        assert.strictEqual("Je suis mineur et étudiant", ex.conditionLogiqueEt(17, true));
 	        assert.strictEqual("Je suis mineur mais pas étudiant", ex.conditionLogiqueEt(17, false));
 	    }
