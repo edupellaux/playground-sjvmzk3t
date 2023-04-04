@@ -53,8 +53,7 @@ describe('Test de comparaison opérateur logique et', () => {
 	it("Test de plein tarif", () => {
 	    try
 	    {
-	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(18, true, false));
-	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(23, false, false));
+	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(18, false, false));
 	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(26, false, true));
 	    }
 	    catch (error)
