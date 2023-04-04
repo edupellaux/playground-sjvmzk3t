@@ -1,11 +1,9 @@
-let age = 5
-let estAuChomage = ""
-let estEtudiant = ""
+let chiffre = 0
 
 // {
-function conditionLogiqueOu (age, estAuChomage, estEtudiant) {
+function switchChiffre (chiffre) {
 // }
-let phrase = ""
+let mot = ""
 
 // Écrivez le test de comparaison ci-dessous
 
@@ -13,9 +11,9 @@ let phrase = ""
 
 
 // {
-	return phrase
+	return mot
 }
 module.exports = {
-	conditionLogiqueOu : conditionLogiqueOu
+	switchChiffre : switchChiffre
 };
 // }

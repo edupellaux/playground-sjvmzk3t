@@ -2,65 +2,58 @@ const utils = require('./utils.js');
 const assert = require('assert');
 const ex = require('./exo.js');
 
-/*
-
-if (age < 16) {
- phrase = "tarif enfant"
-} else if (age <  18 || age >= 65 || estAuChomage || (estEtudiant && age < 25)) {
-    phrase = "tarif réduit"
-} else {
-    phrase = "plein tarif"
-} 
-
-*/
-
-describe('Test de comparaison opérateur logique et', () => {
-	it("Test de tarif enfant", () => {
+describe('Test de comparaison avec switch', () => {
+	it("Test avec 1", () => {
 	    try
 	    {
-	        assert.strictEqual("tarif enfant", ex.conditionLogiqueOu(15, true, true));
-	        assert.strictEqual("tarif enfant", ex.conditionLogiqueOu(15, false, true));
-	        assert.strictEqual("tarif enfant", ex.conditionLogiqueOu(15, true, false));
-	        assert.strictEqual("tarif enfant", ex.conditionLogiqueOu(15, false, false));
+	        assert.strictEqual("un", ex.switchChiffre(1));
 	    }
 	    catch (error)
 	    {
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que l'âge soit plus petit que 18 🤔");
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que le fait d'être au chômage ou être étudiant ne joue pas de rôle 🤔");
-        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable phrase 🤔");
+	        utils.printMessage('Conseil 💡', "Vérifiez que que la valeur de chiffre soit bien 1 🤔");
+        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable chiffre 🤔");
 
 	        throw error;
 	    }
 	});
 
-	it("Test tarif réduit", () => {
+	it("Test avec 2", () => {
 	    try
 	    {
-	        assert.strictEqual("tarif réduit", ex.conditionLogiqueOu(17, true, true));
-	        assert.strictEqual("tarif réduit", ex.conditionLogiqueOu(42, true, false));
-	        assert.strictEqual("tarif réduit", ex.conditionLogiqueOu(65, false, false));
-	        assert.strictEqual("tarif réduit", ex.conditionLogiqueOu(21, false, true));
+	        assert.strictEqual("deux", ex.switchChiffre(2));
 	    }
 	    catch (error)
 	    {
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que l'âge soit plus petit à 18 🤔");
-        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable phrase 🤔");
+	        utils.printMessage('Conseil 💡', "Vérifiez que que la valeur de chiffre soit bien 2 🤔");
+        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable chiffre 🤔");
 
 	        throw error;
 	    }
 	});
 
-	it("Test de plein tarif", () => {
+	it("Test avec 3", () => {
 	    try
 	    {
-	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(18, false, false));
-	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(26, false, true));
+	        assert.strictEqual("trois", ex.switchChiffre(3));
 	    }
 	    catch (error)
 	    {
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que l'âge soit plus grand ou égal à 18 🤔");
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que l'âge soit supérieur à 25 si la personne est étudiante 🤔");
-        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable phrase 🤔");
+	        utils.printMessage('Conseil 💡', "Vérifiez que que la valeur de chiffre soit bien 3 🤔");
+        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable chiffre 🤔");
+
+	        throw error;
+	    }
+	});
+
+	it("Test avec une autre valeur", () => {
+	    try
+	    {
+	        assert.strictEqual("inconnu", ex.switchChiffre(4));
+	    }
+	    catch (error)
+	    {
+	        utils.printMessage('Conseil 💡', "Vérifiez que que la valeur de chiffre soit bien différente de 1, 2 ou 3 🤔");
+        	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable chiffre 🤔");
 
 	        throw error;
 	    }
