@@ -43,7 +43,7 @@ describe('Test de comparaison opérateur logique et', () => {
 	    }
 	    catch (error)
 	    {
-	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que l'âge soit plus plus petit à 18 🤔");
+	        utils.printMessage('Conseil 💡', "Vérifiez que vous testiez que l'âge soit plus petit à 18 🤔");
         	utils.printMessage('Conseil 💡', "Vérifiez la valeur de la variable phrase 🤔");
 
 	        throw error;
@@ -53,7 +53,7 @@ describe('Test de comparaison opérateur logique et', () => {
 	it("Test de plein tarif", () => {
 	    try
 	    {
-	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(18, true, true));
+	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(18, true, false));
 	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(23, false, false));
 	        assert.strictEqual("plein tarif", ex.conditionLogiqueOu(26, false, true));
 	    }
