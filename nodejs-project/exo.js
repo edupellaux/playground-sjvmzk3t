@@ -1,8 +1,9 @@
 let age = 5
+let estAuChomage = ""
 let estEtudiant = ""
 
 // {
-function conditionLogiqueEt (age, estEtudiant) {
+function conditionLogiqueOu (age, estAuChomage, estEtudiant) {
 // }
 let phrase = ""
 
@@ -15,6 +16,6 @@ let phrase = ""
 	return phrase
 }
 module.exports = {
-	conditionLogiqueEt : conditionLogiqueEt
+	conditionLogiqueOu : conditionLogiqueOu
 };
 // }
